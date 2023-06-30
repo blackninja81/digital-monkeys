@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "cerelion";
+  src: local("cerelion"),
+    url("../../public/fonts/Strippy-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: "main";
+  src: local("cerelion"),
+    url("../../public/fonts/OsbournePro-Light.otf") format("truetype");
+}
+.main {
+  overflow: hidden;
+  font-family: main;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+.landing {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+  .landing_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin: 10rem 0rem 2rem 0rem;
+  }
+  .landing_text {
+    padding: 3rem;
+    margin: 5rem 5rem 2rem 1rem;
+    text-align: center;
+    p {
+      font-size: 100px;
+      font-family: cerelion;
+    }
+    button {
+      padding: 1rem;
+      width: 15rem;
+      border-radius: 2rem;
+      border-color: red;
+      background-color: red;
+      border: 1px;
+      border-width: 1px;
+    }
+  }
+}
+.AboutSection {
+  text-align: center;
+  margin-top: 10rem;
+}
+.about {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  .about_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    margin: 5rem 0rem 2rem 0rem;
+  }
+  .about_text {
+    padding: 3rem;
+    margin: 5rem 5rem 2rem 1rem;
+    text-align: center;
+    p {
+      font-size: 30px;
+    }
+    button {
+      padding: 1rem;
+      width: 15rem;
+      border-radius: 2rem;
+      border-color: red;
+      background-color: red;
+      border: 1px;
+      border-width: 1px;
+    }
+  }
+}
+.serviceSection {
+  width: 100vw;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .ServiceCard {
+    display: flex;
+    width: 95vw;
+    gap: 20px;
+    margin-top: 3rem;
+
+    .Card {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      font-size: 20px;
+      /* From https://css.glass */
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(17.5px);
+      -webkit-backdrop-filter: blur(17.5px);
+
+      h4 {
+        margin-top: 2rem;
+      }
+      .Card_image {
+        scale: (2.5);
+        padding: 1rem;
+      }
+    }
+  }
+}
+.portfolioSection {
+  width: 100vw;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+
+    h2{
+      padding: 5rem 0 1rem 0;
+    }
+    h4{
+      padding: 2rem 4rem;
+    }
+    .Portfolio_Panel_tabs{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .Portfolio_Panel{
+      text-align: center;
+      width: 98vw;
+      margin: 1rem;
+    }
+}
+.contact {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: yellowgreen;
+}
