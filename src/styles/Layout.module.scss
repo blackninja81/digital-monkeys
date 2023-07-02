@@ -61,8 +61,11 @@
         }
       }
     }
+    .footer_section{
+      background-color: none;
+    }
   
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 900px) {
       .nav__brand a {
         // display: none;
         backdrop-filter: blur(2rem);

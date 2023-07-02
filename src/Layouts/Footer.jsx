@@ -13,8 +13,8 @@ import {
 
 const Footer = () => {
   return (
-    <div className="footer-section">
-      <footer className="text-center text-lg-start text-muted">
+    <div className={LayoutStyle.footer_section}>
+      <Footer className="text-center text-lg-start text-muted">
         {/* <!-- Section: Social media --> */}
         <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
           {/* <!-- Left --> */}
@@ -117,7 +117,7 @@ const Footer = () => {
           </h6>
         </div>
         {/* <!-- Copyright --> */}
-      </footer>
+      </Footer>
     </div>
   );
 };
