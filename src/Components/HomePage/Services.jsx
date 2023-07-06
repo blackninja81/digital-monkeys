@@ -19,10 +19,18 @@ const ServiceSection = () => {
   return (
     <div className={Homestyle.serviceSection}>
       <h2>Services</h2>
+<<<<<<< HEAD
+      {/* <SimpleGrid
+        spacing={4}
+        templateColumns="repeat(auto-fill, minmax(300px, 400px))"
+      > */}
+      <div className={Homestyle.services_panel}>
+=======
       <SimpleGrid
         spacing={4}
         templateColumns="repeat(auto-fill, minmax(350px, 1fr))"
       >
+>>>>>>> 4e01ac41451085f21e76d7f82b7332ea017772eb
         <Card className={Homestyle.pcard}>
           <CardBody className={Homestyle.pcard_inner}>
             <div className={Homestyle.Card_image}>
@@ -87,6 +95,27 @@ const ServiceSection = () => {
             </Text>
           </CardBody>
         </Card>
+<<<<<<< HEAD
+        </div>
+        {/* <Card className={Homestyle.pcard}>
+          <CardBody className={Homestyle.pcard_inner}>
+            <div className={Homestyle.Card_image}>
+              <PiStrategyDuotone />
+            </div>
+            <CardHeader>
+              <Heading size="sm"> Customer dashboard</Heading>
+            </CardHeader>
+            <Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae rerum expedita, quibusdam odit ipsam quasi saepe,
+              obcaecati ducimus minima perferendis quos dignissimos soluta nihil
+              sapiente.
+            </Text>
+          </CardBody>
+        </Card> */}
+      {/* </SimpleGrid> */}
+      
+=======
         <Card className={Homestyle.pcard}>
           <CardBody className={Homestyle.pcard_inner}>
             <div className={Homestyle.Card_image}>
@@ -158,6 +187,7 @@ const ServiceSection = () => {
         </div>
         
       </div> */}
+>>>>>>> 4e01ac41451085f21e76d7f82b7332ea017772eb
     </div>
   );
 };
