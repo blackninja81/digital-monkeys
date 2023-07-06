@@ -18,7 +18,8 @@ const AboutSection = () => {
         <button>Learn More</button>
       </div>
       <div className={Homestyle.about_image}>
-        <Image src={team} height={450} width={450} alt="about Image"/>
+
+        <Image src={team} height={400} width={400} />
       </div>
     </div>
     </div>
