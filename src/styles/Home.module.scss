@@ -13,6 +13,10 @@
   font-family: main;
   background-color: #d9afd9;
   background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+
+  h2 {
+    font-weight: bold;
+  }
 }
 .landing {
   width: 100vw;
@@ -47,7 +51,7 @@
 }
 .AboutSection {
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 .about {
   width: 100vw;
@@ -58,14 +62,14 @@
     justify-content: center;
     align-items: center;
     padding: 0 10px;
-    margin: 5rem 0rem 2rem 0rem;
+    margin: 2rem 0rem 2rem 0rem;
   }
   .about_text {
-    padding: 3rem;
-    margin: 5rem 5rem 2rem 1rem;
+    padding: 2rem;
+    margin: 2rem 5rem 2rem 1rem;
     text-align: center;
     p {
-      font-size: 30px;
+      font-size: 25px;
     }
     button {
       padding: 1rem;
@@ -80,12 +84,20 @@
 }
 .serviceSection {
   width: 100vw;
-  margin-top: 5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-top: 2rem;
+  text-align: center;
 
+  .services_panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    width: 100vw;
+    gap: 10px;
+    padding: 0 1rem;
+  }
+  h2 {
+    padding: 3rem 0;
+  }
   .ServiceCard {
     display: flex;
     width: 95vw;
@@ -110,10 +122,6 @@
       h4 {
         margin-top: 2rem;
       }
-      .Card_image {
-        scale: (2.5);
-        padding: 1rem;
-      }
     }
   }
 }
@@ -125,22 +133,45 @@
   flex-direction: column;
   justify-content: space-around;
 
-    h2{
-      padding: 5rem 0 1rem 0;
-    }
-    h4{
-      padding: 2rem 4rem;
-    }
-    .Portfolio_Panel_tabs{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .Portfolio_Panel{
-      text-align: center;
-      width: 98vw;
-      margin: 1rem;
-    }
+  h2 {
+    padding: 5rem 0 1rem 0;
+  }
+  h4 {
+    padding: 2rem 4rem;
+  }
+  .Portfolio_Panel_tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Portfolio_Panel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    text-align: center;
+    gap: 10px;
+    width: 98vw;
+    margin: 1rem;
+  }
+}
+.pcard {
+  font-size: 20px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(17.5px);
+  -webkit-backdrop-filter: blur(17.5px);
+}
+.pcard_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .Card_image {
+    scale: (2);
+    font-size: 20px;
+    margin: 1rem;
+  }
 }
 .contact {
   height: 100vh;

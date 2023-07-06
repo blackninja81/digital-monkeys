@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useState } from "react";
 import Navstyle from "../styles/Layout.module.scss";
 import {
-  AiOutlinePhone,
   AiFillFacebook,
   AiFillTwitterSquare,
   AiFillInstagram,
